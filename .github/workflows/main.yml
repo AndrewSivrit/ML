@@ -11,5 +11,10 @@ jobs:
         python-version: ["3.8"]
 
     steps:
-      - name: Install dependencies
+      - name: pwd
+        run: pwd
+      - name: ls
+        run: pwd
+      - name: install deps
         run: pip install -e .
+        
