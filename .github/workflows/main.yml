@@ -14,7 +14,7 @@ jobs:
       - name: pwd
         run: pwd
       - name: ls
-        run: pwd
+        run: ls
       - name: install deps
         run: pip install -e .
         
