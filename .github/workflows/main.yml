@@ -1,0 +1,15 @@
+name: Run Python tests
+
+on: [push]
+
+jobs:
+  build:
+    name: Run tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8"]
+
+    steps:
+      - name: Install dependencies
+        run: pip install -e .
