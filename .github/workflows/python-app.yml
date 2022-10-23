@@ -37,5 +37,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
+        pwd
+        ls
         pytest examples/lenet5.py
         pytest examples/k_neighbors.py
