@@ -1,3 +1,6 @@
+"""
+Example contains tf model Lenet5 for MNIST and test (train, validation)
+"""
 import keras.layers as layers
 import numpy as np
 import tensorflow as tf

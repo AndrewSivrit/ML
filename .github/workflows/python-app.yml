@@ -38,3 +38,4 @@ jobs:
     - name: Test with pytest
       run: |
         pytest examples/lenet5.py
+        pytest examples/k_neighbors.py

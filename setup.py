@@ -7,7 +7,6 @@ setup(
     version='0.0.0',
     author='AndreyNikitin',
     author_email='nikitinandrews@gmail.com',
-    # packages=find_packages(exclude=['developer_instruments', 'examples', '*dnn_quant_tests*', 'legacy_developer_docs']),
     package_data={
         'ml_examples': [],
     },
@@ -16,6 +15,9 @@ setup(
         'keras==2.7',
         'tensorflow==2.7.1',  # to compute quant-graph reference (also for docs)
 
+        'scikit-learn',
+        'matplotlib',
+        'pandas',
         'pytest',
 
         # Code Quality
