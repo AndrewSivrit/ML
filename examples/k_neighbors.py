@@ -11,7 +11,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 
 
-RESOURCES_PATH = '../resources/classified_data.csv'
+RESOURCES_PATH = 'resources/classified_data.csv'
 LABEL_COL = 'TARGET CLASS'
 
 
