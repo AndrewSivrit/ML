@@ -3,8 +3,6 @@ Example contains model ML k-neighbors, using sklearn packet
 """
 
 import numpy as np
-import matplotlib
-import matplotlib.pyplot as plt
 import pandas as pd
 
 from typing import Tuple
@@ -12,11 +10,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 
-matplotlib.use('TkAgg')
 
 RESOURCES_PATH = '../resources/classified_data.csv'
 LABEL_COL = 'TARGET CLASS'
-SHOW = False
 
 
 def pre_process(raw_data: pd.DataFrame) -> Tuple[pd.DataFrame, pd.Series]:
@@ -61,8 +57,4 @@ def test_k_neighbors() -> None:
     print(f'Least error for {best_neighbors}: {error}')
 
     assert accuracy > 0.9
-
-    if SHOW:
-        plt.plot(error_rates)
-        plt.show()
 
